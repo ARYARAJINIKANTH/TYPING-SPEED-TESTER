@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <img src="vsb.jpg" alt="">
+
+        <h1>VSB ENGINEERING COLLEGE</h1>
+        <h2>Typing Speed Tester</h2>
+
+        <div id="welcome">
+            <p>Click the button below to start your typing test. Try to type accurately and quickly!</p>
+            <button onclick="startTest()">Start Test</button>
+        </div>
+
+        <div id="testArea" style="display: none;">
+            <p class="label">Type this:</p>
+            <p id="sampleText"></p>
+
+            <textarea id="typedText" placeholder="Start typing here..."></textarea>
+
+            <div id="result"></div>
+
+            <button onclick="resetTest()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
